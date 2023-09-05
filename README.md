@@ -1,4 +1,4 @@
-# vim-conf
+# vimrc
 simple vim conf
 
 # Introduction
