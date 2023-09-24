@@ -5,6 +5,7 @@ set encoding=utf-8
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
+set nohlsearch
 " set list listchars=tab:\^\
 
 set clipboard=unnamed,autoselect
@@ -15,6 +16,8 @@ filetype plugin indent on
 " need to mv tender.nvim/colors/tender.vim ~/.vim/colors
 syntax enable
 colorscheme tender
+
+set history=150
 
 " WSL clipboard
 if !empty($WSL_DISTRO_NAME)
