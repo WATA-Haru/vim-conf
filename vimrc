@@ -5,7 +5,7 @@ set encoding=utf-8
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
-set nohlsearch
+set hlsearch
 " set list listchars=tab:\^\
 
 set clipboard=unnamed,autoselect
@@ -30,5 +30,7 @@ if !empty($WSL_DISTRO_NAME)
     endif
 endif
 
-"plugins
-"packpath=~/.vim,
+"source ~/.vim/pack/42plug/start/stdheader.vim
+let g:user42 = 'hwatahik'
+let g:mail42 = 'hwatahik@student.42tokyo.jp'
+"let g:NERDTreeLimitedSyntax = 1
