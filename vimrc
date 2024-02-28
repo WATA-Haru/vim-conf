@@ -8,8 +8,11 @@ set softtabstop=4
 set hlsearch
 
 set clipboard=unnamed,autoselect
-inoremap jk <ESC>
 let mapleader = " "
+inoremap jk <ESC>
+nnoremap <Leader>< 10<C-W><
+nnoremap <Leader>> 10<C-W>>
+
 filetype plugin indent on
 
 " need to mv tender.nvim/colors/tender.vim ~/.vim/colors
@@ -60,3 +63,10 @@ if &term =~ "screen-256color"
     cnoremap <special> <Esc>[200~ <nop>
     cnoremap <special> <Esc>[201~ <nop>
 endif
+
+" https://vim-jp.org/vim-users-jp/2009/11/01/Hack-96.html
+set nocompatible
+autocmd FileType *
+\   if &l:omnifunc == ''
+\ |   setlocal omnifunc=syntaxcomplete#Complete
+\ | endif
