@@ -13,6 +13,16 @@ inoremap jk <ESC>
 nnoremap <Leader>< 10<C-W><
 nnoremap <Leader>> 10<C-W>>
 
+" remap ^ and $
+nnoremap <C-h> ^
+nnoremap <C-l> $
+vnoremap <C-h> ^
+vnoremap <C-l> $
+
+" Inc/Dec settings
+nnoremap + <C-a>
+nnoremap - <C-x>
+
 filetype plugin indent on
 
 " need to mv tender.nvim/colors/tender.vim ~/.vim/colors
