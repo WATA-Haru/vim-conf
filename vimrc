@@ -14,10 +14,10 @@ nnoremap <Leader>< 10<C-W><
 nnoremap <Leader>> 10<C-W>>
 
 " remap ^ and $
-nnoremap <C-h> ^
-nnoremap <C-l> $
-vnoremap <C-h> ^
-vnoremap <C-l> $
+nnoremap <S-h> ^
+nnoremap <S-l> $
+vnoremap <S-h> ^
+vnoremap <S-l> $
 
 " Inc/Dec settings
 nnoremap + <C-a>
